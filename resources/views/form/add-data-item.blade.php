@@ -18,8 +18,13 @@
                     @break
                     @case('time_selector')
                         <div class="layui-input-block">
-                            <input type="text" value="{{isset($contentItems)?$contentItems[$headerItem['id']]:''}}" name="{{$headerItem['id']}}" id="date" autocomplete="off" class="layui-input">
+                            <input type="text" value="{{isset($contentItems)?$contentItems[$headerItem['id']]:''}}" name="{{$headerItem['id']}}" id="{{$headerItem['operateName']}}" autocomplete="off" class="layui-input data-select">
                         </div>
+                        <script>
+                            laydate.render({
+                                elem: "#{{$headerItem['operateName']}}"
+                            });
+                        </script>
                     @break
                     @case('number')
                         <div class="layui-input-block">

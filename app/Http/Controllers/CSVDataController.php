@@ -37,7 +37,8 @@ class CSVDataController extends Controller{
     public function CSVDataManageADD(Request $request){
         $headerFile = File::find($request->header_id);
         $file = new File();
-        if($headerFile->file_name->search("_once_head") != -1){
+
+        if(strpos($headerFile->folder_name,"_once_head") != false){
             $file->folder_name = $request->file_name."_once_data";
         }else {
             $file->folder_name = $request->file_name."_data";

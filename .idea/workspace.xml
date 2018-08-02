@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d43b4d74-9f31-4667-bf9f-33f229c3afb6" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CSVDataController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CSVDataController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CSVHeaderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CSVHeaderController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/constants.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/constants.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/form/add-header-file.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/form/add-header-file.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/csv_data.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/csv_data.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/csv_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/csv_header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/form/add-data-file.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/form/add-data-file.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/csv_data_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/csv_data_edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/form/add-data-item.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/form/add-data-item.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,14 +18,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CSVDataController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CSVDataController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CSVDataController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="238" column="36" selection-start-line="238" selection-start-column="36" selection-end-line="238" selection-end-column="36" />
+            <state relative-caret-position="166">
+              <caret line="41" column="66" selection-start-line="41" selection-start-column="66" selection-end-line="41" selection-end-column="66" />
               <folding>
                 <element signature="e#40#60#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="csv_data_edit.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/csv_data_edit.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="302">
+              <caret line="116" column="42" selection-start-line="116" selection-start-column="42" selection-end-line="116" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -79,12 +81,10 @@
         <option value="$PROJECT_DIR$/public/form/add-data-file.html" />
         <option value="$PROJECT_DIR$/resources/views/form/operate_type_select.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" />
-        <option value="$PROJECT_DIR$/resources/views/form/add-data-item.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/FormController.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/views/csv_header_edit.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/csv_data_edit.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/layui.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/form/add-data-file.blade.php" />
         <option value="$PROJECT_DIR$/public/form/add-header-file.html" />
@@ -95,6 +95,8 @@
         <option value="$PROJECT_DIR$/config/constants.php" />
         <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/CSVDataController.php" />
+        <option value="$PROJECT_DIR$/resources/views/form/add-data-item.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/csv_data_edit.blade.php" />
       </list>
     </option>
   </component>
@@ -182,9 +184,9 @@
       <path value="$PROJECT_DIR$/vendor/phpunit/phpunit-mock-objects" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="28" />
-    <option name="y" value="98" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="46" />
+    <option name="y" value="-19" />
     <option name="width" value="1266" />
     <option name="height" value="527" />
   </component>
@@ -315,12 +317,12 @@
       <workItem from="1532804530974" duration="31000" />
       <workItem from="1532869523080" duration="56111000" />
       <workItem from="1533133735440" duration="617000" />
-      <workItem from="1533172301200" duration="2545000" />
+      <workItem from="1533172301200" duration="5086000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83491000" />
+    <option name="totallyTimeSpent" value="86032000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -600,13 +602,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/csv_data_edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="128" column="52" selection-start-line="128" selection-start-column="52" selection-end-line="128" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/layui.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -659,13 +654,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/form/add-data-item.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="827">
-          <caret line="39" column="27" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/csv_header.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -694,13 +682,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/form/add-data-item.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="25" column="31" lean-forward="true" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CSVDataController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="238" column="36" selection-start-line="238" selection-start-column="36" selection-end-line="238" selection-end-column="36" />
+        <state relative-caret-position="166">
+          <caret line="41" column="66" selection-start-line="41" selection-start-column="66" selection-end-line="41" selection-end-column="66" />
           <folding>
             <element signature="e#40#60#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/csv_data_edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="116" column="42" selection-start-line="116" selection-start-column="42" selection-end-line="116" selection-end-column="42" />
         </state>
       </provider>
     </entry>

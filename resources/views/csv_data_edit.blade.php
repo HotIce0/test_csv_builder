@@ -62,6 +62,9 @@
                 });
             });
         } else if (obj.event === 'edit') {
+            if(editBoxIndex != -1)
+                return;
+            editBoxIndex = 0;
             $.get('{{route('editCSVDataFileItem', $id)}}'+'?content_item_id='+obj.data.id, null, function(form) {
                 editBoxIndex = layer.open({
                     type: 1,
@@ -90,9 +93,6 @@
                     },
                     success: function(layero, index) {
                         //渲染时间选择器
-                        laydate.render({
-                            elem: '#date'
-                        });
                         //弹出窗口成功后渲染表单
                         var form = layui.form;
                         form.render();
