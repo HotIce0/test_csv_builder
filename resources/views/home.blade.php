@@ -5,23 +5,6 @@
 @endsection
 
 @section('content')
-    <blockquote class="layui-elem-quote">
-        <a href="javascript:;" class="layui-btn layui-btn-small" id="add">
-            <i class="layui-icon">&#xe608;</i> 添加csv文件
-        </a>
-        <a href="#" class="layui-btn layui-btn-small" id="import">
-            <i class="layui-icon">&#xe608;</i> 导入信息
-        </a>
-        <a href="#" class="layui-btn layui-btn-small">
-            <i class="fa fa-shopping-cart" aria-hidden="true"></i> 导出信息
-        </a>
-        <a href="#" class="layui-btn layui-btn-small" id="getSelected">
-            <i class="fa fa-shopping-cart" aria-hidden="true"></i> 获取全选信息
-        </a>
-        <a href="javascript:;" class="layui-btn layui-btn-small" id="search">
-            <i class="layui-icon">&#xe615;</i> 搜索
-        </a>
-    </blockquote>
     <table id="all_csv_file_table_id" lay-filter="all_csv_file_table_filter"></table>
     <!-- 工具栏 -->
     <script type="text/html" id="operateBar">

@@ -14,7 +14,7 @@
         <a class="layui-btn layui-btn-xs" lay-event="edit">编辑文件</a>
         <a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="delete">删除</a>
         <a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="download">下载</a>
-        <a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="downloadOnce">下载(一次执行)</a>
+        {{--<a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="downloadOnce">下载(一次执行)</a>--}}
     </script>
     <!-- 工具栏 End -->
 @endsection

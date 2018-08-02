@@ -38,7 +38,16 @@ class CSVHeaderController extends Controller
 
     public function CSVHeaderManageADD(Request $request){
         $file = new File();
-        $file->folder_name = $request->file_name;
+        if($request->is_once == "no_once"){
+            $file->folder_name = $request->file_name.'_head';
+        }elseif($request->is_once == "once"){
+            $file->folder_name = $request->file_name.'_once_head';
+        }else{
+            return response()->json([
+                'code' => 1,
+                'msg' => '新增头文件失败，文件类型有误已存在!',
+            ]);
+        }
         $file->type = config('constants.FILE_TYPE_CSV_HEADER');
         $file->user_id = $request->user()->id;
         try{

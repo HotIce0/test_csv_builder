@@ -35,8 +35,13 @@ class CSVDataController extends Controller{
     }
 
     public function CSVDataManageADD(Request $request){
+        $headerFile = File::find($request->header_id);
         $file = new File();
-        $file->folder_name = $request->file_name;
+        if($headerFile->file_name->search("_once_head") != -1){
+            $file->folder_name = $request->file_name."_once_data";
+        }else {
+            $file->folder_name = $request->file_name."_data";
+        }
         $file->type = config('constants.FILE_TYPE_CSV_DATA');
         $file->header_id = $request->header_id;
         $file->user_id = $request->user()->id;

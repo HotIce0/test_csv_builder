@@ -14,7 +14,7 @@
         <a class="layui-btn layui-btn-xs" lay-event="edit">编辑文件</a>
         <a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="delete">删除</a>
         <a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="download">下载</a>
-        <a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="downloadOnce">下载(一次执行)</a>
+        {{--<a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="downloadOnce">下载(一次执行)</a>--}}
     </script>
     <!-- 工具栏 End -->
 @endsection
@@ -104,7 +104,7 @@
                         form.render();
                         form.on('submit(submit)', function(data) {
                             //这里可以写ajax方法提交表单
-                            $.get('{{route('CSVHeaderManageADD')}}'+'?file_name='+data.field.file_name, function (data) {
+                            $.get('{{route('CSVHeaderManageADD')}}'+'?file_name='+data.field.file_name+'&is_once='+data.field.is_once, function (data) {
                                 if (data.code == 0) {
                                     table.reload('csv_header_file_table_id',{
                                         url: '{{route('CSVHeaderManageALL')}}'

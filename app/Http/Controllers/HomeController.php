@@ -14,7 +14,8 @@ class HomeController extends Controller
     public function downloadCSVFile($id, Request $request)
     {
         $file = File::find($id);
-        $filePath = $request->user()->id.'/'.$request->session()->getId().'/'.$file->folder_name.($request->once==1?"_once":"").($request->is_head==1?"_head":"_data").'.csv';
+        //$filePath = $request->user()->id.'/'.$request->session()->getId().'/'.$file->folder_name.($request->once==1?"_once":"").($request->is_head==1?"_head":"_data").'.csv';
+        $filePath = $request->user()->id.'/'.$request->session()->getId().'/'.$file->folder_name.'.csv';
         Storage::disk('public')->put($filePath, $file->content);
         return Storage::disk('public')->download($filePath);
     }

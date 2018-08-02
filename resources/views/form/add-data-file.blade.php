@@ -12,7 +12,7 @@
                 <select name="header_id" lay-verify="required" lay-search>
                     <option value=""></option>
                     @foreach($files as $file)
-                        <option value="{{$file->id}}">{{$file->id}}&nbsp;&nbsp;{{$file->folder_name}}</option>
+                        <option value="{{$file->id}}">{{$file->id}}—{{$file->folder_name}}</option>
                     @endforeach
                 </select>
             </div>

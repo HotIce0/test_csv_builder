@@ -6,6 +6,13 @@
                 <input type="text" name="file_name" placeholder="请输入文件名" autocomplete="off" class="layui-input">
             </div>
         </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">文件类型</label>
+            <div class="layui-input-block">
+                <input type="radio" name="is_once" value="once" title="一次性文件" checked="">
+                <input type="radio" name="is_once" value="no_once" title="非一次性文件">
+            </div>
+        </div>
         <button lay-filter="submit" lay-submit style="display: none;"></button>
     </form>
 </div>
